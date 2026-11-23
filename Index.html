@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-IE" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plug & Play Solar Ireland | Balcony Solar & Off-Grid Guides</title>
+  <meta name="description" content="Independent Irish guide to balcony solar regulations, ESB Networks NC6 compliance, and legal off-grid portable solar setups in Ireland." />
+  <script src="https://tailwindcss.com"></script>
+  <link rel="preconnect" href="https://googleapis.com">
+  <link rel="preconnect" href="https://gstatic.com" crossorigin>
+  <link href="https://googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased">
+
+  <!-- Top Compliance Notice Banner -->
+  <div class="bg-amber-50 border-b border-amber-200 px-4 py-2.5 text-center text-xs sm:text-sm text-amber-900">
+    <strong>Consumer Notice:</strong> Grid-tied 3-pin plug-in solar kits are not currently permitted under Irish wiring regulations without a Registered Electrical Contractor (REC) &amp; ESB NC6 notification.
+  </div>
+
+  <!-- Navigation -->
+  <header class="sticky top-0 z-50 bg-white/90 backdrop-blur border-b border-slate-200">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-16 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-2 font-extrabold text-lg sm:text-xl text-slate-900 tracking-tight">
+        <span class="inline-flex items-center justify-center w-8 h-8 rounded-lg bg-emerald-600 text-white">
+          <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z" />
+          </svg>
+        </span>
+        PlugAndPlaySolar<span class="text-emerald-600">.ie</span>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-slate-600">
+        <a href="#regulations" class="hover:text-emerald-600 transition">Irish Regulations</a>
+        <a href="#legal-options" class="hover:text-emerald-600 transition">Compliant Setups</a>
+        <a href="#faq" class="hover:text-emerald-600 transition">FAQ</a>
+        <a href="#updates" class="px-4 py-2 rounded-lg bg-emerald-600 text-white hover:bg-emerald-700 transition">Get Updates</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative overflow-hidden bg-gradient-to-b from-emerald-50/70 via-white to-slate-50 pt-14 pb-20 sm:pt-20 sm:pb-24">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center">
+      <span class="inline-block px-3.5 py-1 rounded-full bg-emerald-100 text-emerald-800 text-xs font-semibold uppercase tracking-wider mb-5">
+        Independent Irish Solar Resource
+      </span>
+      <h1 class="text-3xl sm:text-5xl font-extrabold text-slate-900 tracking-tight leading-tight">
+        Plug &amp; Play Solar in Ireland:<br class="hidden sm:inline" />
+        <span class="text-emerald-600">Rules, Compliance &amp; Off-Grid Guides</span>
+      </h1>
+      <p class="mt-5 text-base sm:text-lg text-slate-600 max-w-2xl mx-auto leading-relaxed">
+        Everything Irish homeowners, renters, and DIYers need to know about balcony solar technology, ESB Networks regulations, and legal off-grid solar alternatives you can safely use today.
+      </p>
+
+      <!-- Waitlist / Regulation Alert Form -->
+      <div id="updates" class="mt-9 max-w-md mx-auto bg-white p-4 sm:p-5 rounded-2xl shadow-sm border border-slate-200">
+        <p class="text-sm font-semibold text-slate-800 mb-3">
+          Get notified if Irish balcony solar rules change &amp; when vetted gear guides launch:
+        </p>
+        <!-- Replace action="#" with a free Formspree.io endpoint when ready -->
+        <form onsubmit="handleSignup(event)" class="flex flex-col sm:flex-row gap-2.5">
+          <input
+            type="email"
+            id="emailInput"
+            required
+            placeholder="you@example.ie"
+            class="flex-1 px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500"
+          />
+          <button
+            type="submit"
+            class="px-5 py-2.5 rounded-xl bg-emerald-600 hover:bg-emerald-700 text-white font-semibold text-sm transition cursor-pointer"
+          >
+            Join Waitlist
+          </button>
+        </form>
+        <p id="formMessage" class="hidden mt-2.5 text-xs font-medium text-emerald-700"></p>
+        <p class="mt-2 text-[11px] text-slate-400">No spam. Irish regulatory updates and educational guides only.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Irish Regulations Section -->
+  <section id="regulations" class="py-16 bg-white border-y border-slate-200">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="max-w-2xl">
+        <h2 class="text-2xl sm:text-3xl font-bold text-slate-900">Irish Electrical Compliance &amp; ESB Rules</h2>
+        <p class="mt-3 text-slate-600 leading-relaxed">
+          While 800W "Balkonkraftwerk" plug-in solar kits are popular in Germany and across parts of Europe, Ireland operates under strict national electrical safety standards.
+        </p>
+      </div>
+
+      <div class="mt-10 grid md:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+          <div class="w-10 h-10 rounded-xl bg-red-100 text-red-700 flex items-center justify-center font-bold text-lg mb-4">1</div>
+          <h3 class="font-bold text-slate-900 text-lg">No 3-Pin Socket Feed-In</h3>
+          <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+            Under Irish wiring rules (I.S. 10101), plugging a solar microinverter directly into a standard 13A domestic wall socket is not permitted due to circuit overload and isolation risks.
+          </p>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+          <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center font-bold text-lg mb-4">2</div>
+          <h3 class="font-bold text-slate-900 text-lg">ESB Networks NC6 Form</h3>
+          <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+            Any microgeneration system connected to the Irish electricity grid must comply with EN 50549-1 standards and be notified to ESB Networks via an NC6 application.
+          </p>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="p-6 rounded-2xl bg-slate-50 border border-slate-200">
+          <div class="w-10 h-10 rounded-xl bg-emerald-100 text-emerald-700 flex items-center justify-center font-bold text-lg mb-4">3</div>
+          <h3 class="font-bold text-slate-900 text-lg">Safe Electric Certification</h3>
+          <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+            Fixed grid-connected solar installations in Ireland must be wired on a dedicated circuit and certified by a Safe Electric Registered Electrical Contractor (REC).
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Legal Off-Grid Alternatives Section -->
+  <section id="legal-options" class="py-16 bg-slate-50">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="max-w-2xl">
+        <span class="text-xs font-bold uppercase tracking-wider text-emerald-600">100% Grid-Independent</span>
+        <h2 class="mt-1 text-2xl sm:text-3xl font-bold text-slate-900">What You Can Legally Use Today</h2>
+        <p class="mt-3 text-slate-600 leading-relaxed">
+          If a solar system does <strong>not</strong> connect to your home's consumer unit or feed power into household wall sockets, it is considered an off-grid appliance and requires no ESB notification.
+        </p>
+      </div>
+
+      <div class="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <h3 class="font-bold text-lg text-slate-900">Portable Solar Power Stations</h3>
+          <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+            All-in-one LiFePO4 battery units charged via folding solar panels. Ideal for powering home office desks, Wi-Fi routers, or appliances directly from the battery's built-in outlets.
+          </p>
+          <span class="inline-block mt-4 text-xs font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md">Zero Grid Connection</span>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <h3 class="font-bold text-lg text-slate-900">Shed, Garage &amp; Cabin Kits</h3>
+          <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+            Standalone 12V or 24V DC solar kits for garden sheds, workshops, and polytunnels to run LED lighting, security cameras, and battery tool chargers off-grid.
+          </p>
+          <span class="inline-block mt-4 text-xs font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md">Low-Voltage DC DIY</span>
+        </div>
+
+        <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm">
+          <h3 class="font-bold text-lg text-slate-900">Campervan &amp; Emergency Backup</h3>
+          <p class="mt-2 text-sm text-slate-600 leading-relaxed">
+            Portable solar setups designed for storm outages in Ireland, camping, and marine use—keeping fridges, phones, and medical devices running when the grid goes down.
+          </p>
+          <span class="inline-block mt-4 text-xs font-semibold text-emerald-700 bg-emerald-50 px-2.5 py-1 rounded-md">Storm &amp; Outage Ready</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ Section -->
